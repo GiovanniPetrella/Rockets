@@ -1,0 +1,127 @@
+      
+import java.util.Scanner;
+public class Rockets {
+	   public static void main(String[] args) {
+		   Scanner scnr = new Scanner(System.in);
+		   
+		   System.out.print("Type in the size you want your rocket in : ");
+		   int Size = scnr.nextInt();
+		   int MaxLine = (Size * 2 - 1);
+		   int HalfBoxMaxLine = Size;
+		   
+		   
+		  
+		   //CONE
+		   for (int line = 1; line <= (Size * 2 - 1); ++line){
+		      for (int spaces = MaxLine; spaces >= line;--spaces){
+		         System.out.print(" ");
+		      }
+		      for (int foward = 1; foward <= line;++foward){
+			         System.out.print("/");
+			  }
+		      System.out.print("**");
+		      for (int backward = 1; backward <= line; ++backward){
+			         System.out.print("\\");
+			  }
+		      System.out.println();
+		   }
+		   
+		   
+		   
+		   //Divider Line
+		   System.out.print("+");
+		   for (int equalsStar = 1; equalsStar <= (Size * 2); ++equalsStar){
+			   System.out.print("=*");
+		   }
+		   System.out.println("+");
+		   
+		   
+		   
+		   //1st Part of the First Box
+		   for (int line = 1; line <= Size; ++line) {
+			   System.out.print("|");
+			for (int half = 1; half <= 2; ++half) {
+			   for (int dot = Size - 1; dot >= line; --dot){
+				   System.out.print(".");
+			   }
+			   for (int slashes = 1; slashes <= line ; ++slashes){
+				   System.out.print("/\\");
+			   }
+			   for (int dot = Size - 1; dot >= line; --dot){
+				   System.out.print(".");
+			   }
+		   }
+			   System.out.println("|");
+		   }
+		   
+		   
+		   
+		   //2nd Part of the First Box
+		   for (int line = 1; line <= Size; ++line){
+			   System.out.print("|");
+			for (int half = 1; half <= 2; ++half){
+			   for (int dot = 1; dot < line; ++dot){
+				   System.out.print(".");
+			   }
+			   for (int slashes = Size; slashes >= line ; --slashes){
+				   System.out.print("\\/");
+			   }
+			   for (int dot = 1; dot < line; ++dot){
+				   System.out.print(".");
+			   }
+		   }
+			   System.out.println("|");
+		   }
+		   
+		   
+		   
+		   //divider line
+		   System.out.print("+");
+		   for (int equalsStar = 1; equalsStar <= (Size * 2); ++equalsStar){
+			   System.out.print("=*");
+		   }
+		   System.out.println("+");
+		   
+		   
+		   
+		   //1st part of the second box
+		   for (int line = 1; line <= Size; ++line){
+			   System.out.print("|");
+			for (int half = 1; half <= 2; ++half){
+			   for (int dot = 1; dot < line; ++dot){
+				   System.out.print(".");
+			   }
+			   for (int slashes = Size; slashes >= line ; --slashes){
+				   System.out.print("\\/");
+			   }
+			   for (int dot = 1; dot < line; ++dot){
+				   System.out.print(".");
+			   }
+		   }
+			   System.out.println("|");
+		   }
+		   
+		   
+		   
+		   //2nd part of the second box
+		   for (int line = 1; line <= Size; ++line) {
+			   System.out.print("|");
+			for (int half = 1; half <= 2; ++half) {
+			   for (int dot = Size - 1; dot >= line; --dot){
+				   System.out.print(".");
+			   }
+			   for (int slashes = 1; slashes <= line ; ++slashes){
+				   System.out.print("/\\");
+			   }
+			   for (int dot = Size - 1; dot >= line; --dot){
+				   System.out.print(".");
+			   }
+		    }
+			   System.out.println("|");
+		   }
+		 //section divider
+		   System.out.print("+");
+		   for (int equalsStar = 1; equalsStar <= (Size * 2); ++equalsStar){
+			   System.out.print("=*");
+		   }
+ 
